@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Firma digital</title>
+    <link href="css/jquery.signaturepad.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="sigPad" id="smoothed" style="width:404px;">
+        <h2>Firma digital</h2>
+        <ul class="sigNav" style="display: block;">
+            <li class="drawIt"><a href="#draw-it">Campo para firma</a></li>
+            <li class="clearButton"><a href="#clear">Borrar</a></li>
+        </ul>
+        <div class="sig sigWrapper current" style="height: auto; display: block;">
+            <div class="typed" style="display: none;"></div>
+            <canvas class="pad" width="400" height="250"></canvas>
+            <input type="hidden" name="firma-cifrada" class="output2">
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <!--Trazos-->
+    <script src="js/numeric-1.2.6.min.js"></script>
+    <script src="js/bezier.js"></script>
+    <script src="js/jquery.signaturepad.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#smoothed').signaturePad({
+                drawOnly: true,
+                drawBezierCurves: true,
+                lineTop: 200,
+                output: '.output2',
+                penColour: '#000'
+            });
+        });
+    </script>
+    <script src="js/json2.min.js"></script>
+</body>
+
+</html>
