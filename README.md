@@ -1,0 +1,2 @@
+# digitalSignature
+Este repositorio aloja el código fuente de un contenedor para realizar firmas digitales, las cuales son codificadas y decodificadas por trazos en coordenadas y a diferencia de algunos plugins para firmas digitales este basado en el trabajo de Thomas J Bradley, nos permite obtener firmas con trazos suavizados o más pulidos equiparándose a la calidad de una firma en tinta sobre el papel. Para información detallada diríjase al sitio oficial de documentación https://www.jqueryscript.net/other/Smooth-Signature-Pad-Plugin-with-jQuery-Html5-Canvas.html
